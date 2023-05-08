@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section class="game-details">
+    <article class="game-info">
+      <h1>{{ juego.nombre }}</h1>
+      <div class="game-details-list">
+        <div>
+            <span class="detail-label" >Sistema:</span><span class="detail-value" >{{ juego.sistema }}</span>
+        </div>
+        <div>
+          <span class="detail-label" >Distribuidor:</span> <span class="detail-value" style="text-align: right;">{{ juego.distribuidor }}</span>
+        </div>
+        <div>
+          <span class="detail-label">Desarrollador:</span> <span class="detail-value" style="text-align: right;">{{ juego.desarrollador }}</span>
+        </div>
+        <div>
+          <span class="detail-label">Categoría:</span> <span class="detail-value" style="text-align: right;">{{ juego.categoria }}</span>
+        </div>
+        <div>
+          <span class="detail-label">Año:</span> <span class="detail-value" style="text-align: right;">{{ juego.año }}</span>
+        </div>
+      </div>
+      <a href="{{juego.img}}">
+        <img src="{{ juego.img }}" alt="{{ juego.nombre }}"/>
+      </a>
+      <p class="lead">{{ juego.descripcion }}</p>
+    </article>
+  </section>
+{% endblock %}

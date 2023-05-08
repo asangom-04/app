@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Lista de juegos</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Desarrollador</th>
+        <th>Detalle</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for juego in datos_juegos %}
+        <tr>
+        <td>{{ juego.nombre }}</td>
+        <td>{{ juego.desarrollador }}</td>
+          <td><a href="{{ url_for('juego', id=juego['id']) }}">Detalle</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Búsqueda de juegos</h1>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+  <form action="{{ url_for('buscar_juego') }}" method="post">
+    <div class="form-group">
+      <label for="busqueda">Nombre del juego:</label>
+      <input type="text" class="form-control" id="busqueda" name="busqueda" placeholder="Introduce el nombre del juego">
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+  </form>
+{% endblock %}

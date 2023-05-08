@@ -1,0 +1,138 @@
+/* Estilos para la navegación */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Estilos para la cabecera */
+header {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilos para la sección de juegos */
+#juegos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.juego {
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px #ccc;
+}
+
+.juego img {
+  max-width: 100%;
+}
+
+.juego h2 {
+  margin: 10px;
+  font-size: 24px;
+}
+
+.juego .info {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para el formulario de contacto */
+.formulario {
+  max-width: 900px;
+  padding-left:10;
+  margin: 100px ;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+fieldset {
+  margin-bottom: 10px;
+  padding-right: 2em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+label {
+  display: inline-block;
+  margin-bottom: 10;
+  font-weight: bold;
+  color: #333; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+}
+
+.boton-enviar {
+  background-color: #5cb85c;
+}
+
+.boton-borrar {
+  background-color: #d9534f;
+  margin-left: 1em;
+}
+
+/* Estilos para la página de confirmación de contacto */
+.confirmacion {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.confirmacion h1 {
+  font-size: 36px;
+}
+
+.confirmacion p {
+font-size: 20px;
+margin-top: 10px;
+}
+
+/* Responsive layout para pantallas pequeñas */
+@media only screen and (max-width: 480px) {
+nav {
+flex-direction: column;
+align-items: flex-start;
+padding: 10px 20px;
+}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 text-center">
+        <h1>Bienvenido a la web de juegos MSX</h1>
+        <p>Explora nuestra colección de juegos y diviértete jugando.</p>
+        <a href="{{ url_for('juegos') }}" class="btn btn-primary btn-lg">Ver juegos</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}
